@@ -2,7 +2,8 @@
   "nav": {
     "features": "Features",
     "pricing": "Pricing",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "contact": "Contact"
   },
   "hero": {
     "headline": "Manage Your Shop More Easily",
@@ -162,8 +163,19 @@
     "nav": {
       "features": "Features",
       "pricing": "Pricing",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "contact": "Contact"
     },
     "copyright": "© 2024 Jaga Warung. All rights reserved."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a question or want to collaborate? Reach out directly.",
+    "email": { "label": "Email" },
+    "whatsapp": { "label": "WhatsApp", "cta": "Chat on WhatsApp" },
+    "location": { "label": "Location" },
+    "copy": "Copy",
+    "copied": "Copied!",
+    "cta": "Send an Email"
   }
 }

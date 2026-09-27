@@ -2,7 +2,8 @@
   "nav": {
     "features": "Fitur",
     "pricing": "Harga",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "contact": "Kontak"
   },
   "hero": {
     "headline": "Kelola Warung Jadi Lebih Mudah",
@@ -162,8 +163,19 @@
     "nav": {
       "features": "Fitur",
       "pricing": "Harga",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "contact": "Kontak"
     },
     "copyright": "© 2024 Jaga Warung. Semua hak dilindungi."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Punya pertanyaan atau ingin berkolaborasi? Hubungi langsung.",
+    "email": { "label": "Email" },
+    "whatsapp": { "label": "WhatsApp", "cta": "Chat via WhatsApp" },
+    "location": { "label": "Lokasi" },
+    "copy": "Salin",
+    "copied": "Tersalin!",
+    "cta": "Kirim Email"
   }
 }

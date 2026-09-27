@@ -18,6 +18,7 @@ export function Navbar() {
     { href: "#fitur", label: t("nav.features") },
     { href: "#harga", label: t("nav.pricing") },
     { href: "#faq", label: t("nav.faq") },
+    { href: "#kontak", label: t("nav.contact") },
   ];
 
   const changeLang = (lang: string) => {

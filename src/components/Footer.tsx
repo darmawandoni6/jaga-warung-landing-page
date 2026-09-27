@@ -29,6 +29,9 @@ export function Footer() {
             <a href="#faq" className="hover:text-white transition-colors">
               {t("footer.nav.faq")}
             </a>
+            <a href="#kontak" className="hover:text-white transition-colors">
+              {t("footer.nav.contact")}
+            </a>
           </nav>
         </div>
 
