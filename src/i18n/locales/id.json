@@ -12,9 +12,9 @@
       "demo": "Lihat Demo"
     },
     "stats": {
-      "warungs": "Warung Terdaftar",
-      "transactions": "Transaksi/Bulan",
-      "rating": "Rating Play Store"
+      "beta": "Versi Beta",
+      "free": "Gratis Selamanya",
+      "features": "Fitur Lengkap"
     }
   },
   "features": {

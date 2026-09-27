@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CardContent } from "@/components/ui/card";
+import { PhoneMockup } from "@/components/shared/PhoneMockup";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -14,45 +15,39 @@ export function Screenshots() {
   const screens = [
     {
       id: "dashboard",
-      path: "/images/Screenshot_1790492030.png",
+      path: "/images/Screenshot_1790493365.png",
       titleKey: "Dashboard",
       description: "App design - Dashboard home screen",
     },
     {
       id: "pos",
-      path: "/images/Screenshot_1790493365.png",
+      path: "/images/Screenshot_1790493371.png",
       titleKey: "POS",
       description: "App design - POS/Cashier transaction screen",
     },
     {
-      id: "inventory",
-      path: "/images/Screenshot_1790493371.png",
-      titleKey: "Inventory",
-      description: "App design - Inventory/Stock management screen",
-    },
-    {
-      id: "debt",
-      path: "/images/Screenshot_1790493375.png",
-      titleKey: "Debt",
-      description: "App design - Debt tracking screen",
-    },
-    {
-      id: "reports",
-      path: "/images/Screenshot_1790493379.png",
-      titleKey: "Reports",
-      description: "App design - Financial reports screen",
-    },
-    {
       id: "products",
-      path: "/images/Screenshot_1790493384.png",
+      path: "/images/Screenshot_1790493375.png",
       titleKey: "Products",
       description: "App design - Product list screen",
     },
     {
+      id: "debt",
+      path: "/images/Screenshot_1790493379.png",
+      titleKey: "Debt",
+      description: "App design - Debt tracking screen",
+    },
+    {
       id: "sales",
-      path: "/images/Screenshot_1790493389.png",
+      path: "/images/Screenshot_1790493384.png",
       titleKey: "Sales",
       description: "App design - Sales history screen",
+    },
+    {
+      id: "reports",
+      path: "/images/Screenshot_1790493389.png",
+      titleKey: "Reports",
+      description: "App design - Financial reports screen",
     },
     {
       id: "settings",
@@ -94,7 +89,7 @@ export function Screenshots() {
 
         {/* Slider with Side Controls */}
         <div className="relative flex items-center gap-4">
-          {/* Left Arrow + Dots */}
+          {/* Left Arrow */}
           <div className="flex flex-col items-center gap-3 z-10">
             <Button
               variant="outline"
@@ -105,22 +100,6 @@ export function Screenshots() {
             >
               <ChevronLeft className="size-4" />
             </Button>
-            {perPage > 1 && maxIndex > 0 && (
-              <div className="flex flex-col gap-1.5">
-                {Array.from({ length: maxIndex + 1 }).map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setActive(i)}
-                    className={`rounded-full transition-all ${
-                      active === i
-                        ? "h-6 w-1.5 bg-primary"
-                        : "h-1.5 w-1.5 bg-muted-foreground/30"
-                    }`}
-                    aria-label={`Slide ${i + 1}`}
-                  />
-                ))}
-              </div>
-            )}
           </div>
 
           {/* Slide Track */}
@@ -137,41 +116,10 @@ export function Screenshots() {
                   className="flex-shrink-0 px-3"
                   style={{ width: `${100 / perPage}%` }}
                 >
-                  {/* Android Phone Mockup */}
-                  <div className="relative mx-auto" style={{ maxWidth: "280px" }}>
-                    {/* Phone Frame */}
-                    <div className="relative bg-slate-900 rounded-[2.5rem] p-3 shadow-xl">
-                      {/* Side Buttons */}
-                      <div className="absolute right-[-3px] top-24 w-1 h-12 bg-slate-800 rounded-l-sm" />
-                      <div className="absolute right-[-3px] top-40 w-1 h-16 bg-slate-800 rounded-l-sm" />
-                      <div className="absolute left-[-3px] top-20 w-1 h-8 bg-slate-800 rounded-r-sm" />
-                      <div className="absolute left-[-3px] top-32 w-1 h-12 bg-slate-800 rounded-r-sm" />
-
-                      {/* Screen */}
-                      <div className="relative bg-black rounded-[2rem] overflow-hidden aspect-[9/19.5]">
-                        {/* Status Bar */}
-                        <div className="absolute top-0 left-0 right-0 h-6 bg-black z-10 flex items-center justify-between px-6 text-white text-xs">
-                          <span>9:41</span>
-                          {/* Punch Hole Camera */}
-                          <div className="absolute left-1/2 top-1.5 -translate-x-1/2 w-2 h-2 bg-slate-800 rounded-full" />
-                          <div className="flex items-center gap-1">
-                            <div className="w-3 h-2 border border-white/50 rounded-sm" />
-                            <div className="w-4 h-2 bg-white/80 rounded-sm" />
-                          </div>
-                        </div>
-
-                        {/* Screenshot Content */}
-                        <img
-                          src={s.path}
-                          alt={s.description}
-                          className="w-full h-full object-cover"
-                        />
-
-                        {/* Home Indicator */}
-                        <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-24 h-1 bg-white/80 rounded-full" />
-                      </div>
-                    </div>
-                  </div>
+                  <PhoneMockup
+                    src={s.path}
+                    alt={s.description}
+                  />
 
                   {/* Caption Below Phone */}
                   <CardContent className="p-4 text-center">
@@ -187,7 +135,7 @@ export function Screenshots() {
             </div>
           </div>
 
-          {/* Right Arrow + Dots (mobile fallback) */}
+          {/* Right Arrow */}
           <div className="flex flex-col items-center gap-3 z-10">
             <Button
               variant="outline"
@@ -201,19 +149,23 @@ export function Screenshots() {
           </div>
         </div>
 
-        {/* Dots Indicator (bottom for mobile) */}
-        <div className="flex justify-center gap-2 mt-6 md:hidden">
-          {Array.from({ length: maxIndex + 1 }).map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i)}
-              className={`h-2 rounded-full transition-all ${
-                active === i ? "w-8 bg-primary" : "w-2 bg-muted-foreground/30"
-              }`}
-              aria-label={`Slide ${i + 1}`}
-            />
-          ))}
-        </div>
+        {/* Dots Indicator (center bottom) */}
+        {perPage > 1 && maxIndex > 0 && (
+          <div className="flex flex-row justify-center gap-1.5 mt-6">
+            {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`rounded-full transition-all ${
+                  active === i
+                    ? "w-6 h-1.5 bg-primary"
+                    : "w-1.5 h-1.5 bg-muted-foreground/30"
+                }`}
+                aria-label={`Slide ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

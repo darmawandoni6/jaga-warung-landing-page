@@ -12,9 +12,9 @@
       "demo": "View Demo"
     },
     "stats": {
-      "warungs": "Shops Registered",
-      "transactions": "Transactions/Month",
-      "rating": "Play Store Rating"
+      "beta": "Beta Version",
+      "free": "Free Forever",
+      "features": "Complete Features"
     }
   },
   "features": {
