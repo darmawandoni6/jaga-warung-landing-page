@@ -1,32 +1,76 @@
-# React + TypeScript + Vite
+# Jaga Warung Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Static marketing landing page for Jaga Warung POS application.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework**: React 18 + TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v3 + shadcn/ui
+- **Icons**: Lucide React
+- **i18n**: react-i18next (ID/EN)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Install dependencies
+npm install
 
-## Expanding the Oxlint configuration
+# Run development server
+npm run dev
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+# Build for production
+npm run build
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Preview production build
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── Features.tsx
+│   ├── HowItWorks.tsx
+│   ├── Screenshots.tsx
+│   ├── Testimonials.tsx
+│   ├── Pricing.tsx
+│   ├── FAQ.tsx
+│   ├── Footer.tsx
+│   └── ui/           # shadcn components
+├── i18n/
+│   ├── index.ts
+│   └── locales/
+│       ├── id.json
+│       └── en.json
+├── lib/
+│   └── utils.ts
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+## Color Palette
+
+| Role | Hex | Tailwind |
+|------|-----|----------|
+| Background | `#F8FAFC` | slate-50 |
+| Foreground | `#0F172A` | slate-900 |
+| Primary | `#10B981` | emerald-500 |
+| Muted | `#F1F5F9` | slate-100 |
+| Muted Text | `#64748B` | slate-500 |
+
+## Features
+
+- Responsive design (mobile, tablet, desktop)
+- Language switcher (Indonesian/English)
+- Sticky navbar with blur effect
+- FAQ accordion
+- Mobile hamburger menu
+
+## Deployment
+
+Build output in `dist/` folder. Deploy to Vercel, Netlify, or Cloudflare Pages.
