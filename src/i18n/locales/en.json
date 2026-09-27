@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "headline": "Manage Your Shop More Easily",
+    "subhead": "Free POS app to track sales, inventory, and debts. No hassle, no ads.",
+    "cta": {
+      "download": "Download Free",
+      "demo": "View Demo"
+    },
+    "stats": {
+      "warungs": "Shops Registered",
+      "transactions": "Transactions/Month",
+      "rating": "Play Store Rating"
+    }
+  },
+  "features": {
+    "title": "Complete Features for Your Shop",
+    "subtitle": "Everything you need to manage your shop in one app",
+    "items": {
+      "pos": {
+        "title": "Point of Sale",
+        "desc": "Record sales quickly with a simple interface. Print receipts or send via WhatsApp."
+      },
+      "inventory": {
+        "title": "Inventory Management",
+        "desc": "Monitor stock, get low stock alerts, and track supplier purchases."
+      },
+      "reports": {
+        "title": "Financial Reports",
+        "desc": "View daily, weekly, and monthly reports. Export to Excel for further analysis."
+      },
+      "debt": {
+        "title": "Debt Tracking",
+        "desc": "Manage customer and supplier debts. Automatic due date notifications."
+      },
+      "offline": {
+        "title": "Offline Mode",
+        "desc": "Works without internet. Data syncs automatically when online."
+      },
+      "expenses": {
+        "title": "Expenses",
+        "desc": "Record operational expenses like electricity, water, and stock purchases."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get started in 3 simple steps",
+    "steps": {
+      "download": {
+        "title": "Download the App",
+        "desc": "Download free from Play Store. No registration required to start."
+      },
+      "setup": {
+        "title": "Enter Shop Data",
+        "desc": "Add products, categories, and basic shop information."
+      },
+      "start": {
+        "title": "Start Selling",
+        "desc": "Record every transaction and view sales reports in real-time."
+      }
+    }
+  },
+  "screenshots": {
+    "title": "App Screens",
+    "subtitle": "Simple design to streamline your shop operations"
+  },
+  "testimonials": {
+    "title": "What They Say",
+    "subtitle": "Trusted by thousands of shop owners in Indonesia",
+    "items": {
+      "one": {
+        "quote": "Finally a simple and free app! I used to use notebooks and often forgot, now everything is recorded neatly.",
+        "name": "Bu Siti",
+        "business": "Grocery Store, Surabaya"
+      },
+      "two": {
+        "quote": "The debt tracking feature is very helpful. No more forgotten payments thanks to the notifications.",
+        "name": "Pak Budi",
+        "business": "Sembako Store, Bandung"
+      },
+      "three": {
+        "quote": "Reports are complete and easy to understand. Can export to Excel for supplier reports.",
+        "name": "Bu Dewi",
+        "business": "Food Stall, Yogyakarta"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Free for all basic features",
+    "free": {
+      "name": "Free",
+      "badge": "TOP CHOICE",
+      "price": "Rp 0",
+      "period": "forever",
+      "features": [
+        "Unlimited transactions",
+        "Inventory management",
+        "Debt tracking",
+        "Financial reports",
+        "Offline mode",
+        "Data export"
+      ],
+      "cta": "Download Free"
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Coming Soon",
+      "price": "Rp 49,000",
+      "period": "/month",
+      "features": [
+        "All free features",
+        "Multi-user",
+        "Multi-branch",
+        "Auto backup",
+        "Priority support",
+        "Marketplace integration"
+      ],
+      "cta": "Stay Tuned"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "free": {
+        "q": "Is it really free?",
+        "a": "Yes, 100% free. No hidden fees, no ads, and no usage time limits."
+      },
+      "offline": {
+        "q": "How does offline mode work?",
+        "a": "The app stores data on your device. When online, data automatically syncs to cloud for backup."
+      },
+      "data": {
+        "q": "Is my data safe?",
+        "a": "Data is encrypted and stored on secure servers. You can backup and restore anytime."
+      },
+      "export": {
+        "q": "Can I export data to Excel?",
+        "a": "Yes. All sales, inventory, and debt reports can be exported to Excel/CSV format."
+      },
+      "multi": {
+        "q": "Can it be used on multiple devices?",
+        "a": "Currently one account for one device. Multi-device feature will be available in premium version."
+      },
+      "support": {
+        "q": "What if I need help?",
+        "a": "Contact us via email or WhatsApp. Support team will help within 24 hours."
+      },
+      "language": {
+        "q": "Is it available in Indonesian?",
+        "a": "Yes, the app is fully available in Indonesian. Also available in English."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Digital solution for modern shops",
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "faq": "FAQ"
+    },
+    "copyright": "© 2024 Jaga Warung. All rights reserved."
+  }
+}

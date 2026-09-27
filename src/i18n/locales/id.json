@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "pricing": "Harga",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "headline": "Kelola Warung Jadi Lebih Mudah",
+    "subhead": "Aplikasi POS gratis untuk mencatat penjualan, stok, dan hutang. Tanpa ribet, tanpa iklan.",
+    "cta": {
+      "download": "Download Gratis",
+      "demo": "Lihat Demo"
+    },
+    "stats": {
+      "warungs": "Warung Terdaftar",
+      "transactions": "Transaksi/Bulan",
+      "rating": "Rating Play Store"
+    }
+  },
+  "features": {
+    "title": "Fitur Lengkap untuk Warung Anda",
+    "subtitle": "Semua yang Anda butuhkan untuk mengelola warung dalam satu aplikasi",
+    "items": {
+      "pos": {
+        "title": "Kasir (POS)",
+        "desc": "Catat penjualan cepat dengan tampilan sederhana. Cetak struk atau kirim via WhatsApp."
+      },
+      "inventory": {
+        "title": "Manajemen Stok",
+        "desc": "Pantau stok barang, dapatkan notifikasi saat stok menipis, dan track pembelian supplier."
+      },
+      "reports": {
+        "title": "Laporan Keuangan",
+        "desc": "Lihat laporan harian, mingguan, dan bulanan. Ekspor ke Excel untuk analisis lebih lanjut."
+      },
+      "debt": {
+        "title": "Catat Hutang",
+        "desc": "Kelola hutang pelanggan dan supplier. Notifikasi jatuh tempo otomatis."
+      },
+      "offline": {
+        "title": "Mode Offline",
+        "desc": "Tetap bisa digunakan tanpa internet. Data sync otomatis saat online."
+      },
+      "expenses": {
+        "title": "Pengeluaran",
+        "desc": "Catat pengeluaran operasional seperti listrik, air, dan belanja stok."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Cara Kerja",
+    "subtitle": "Mulai dalam 3 langkah sederhana",
+    "steps": {
+      "download": {
+        "title": "Download Aplikasi",
+        "desc": "Unduh gratis dari Play Store. Tidak perlu registrasi untuk mulai."
+      },
+      "setup": {
+        "title": "Isi Data Warung",
+        "desc": "Tambahkan produk, kategori, dan informasi dasar warung Anda."
+      },
+      "start": {
+        "title": "Mulai Jualan",
+        "desc": "Catat setiap transaksi dan lihat laporan penjualan secara real-time."
+      }
+    }
+  },
+  "screenshots": {
+    "title": "Tampilan Aplikasi",
+    "subtitle": "Desain simpel yang memudahkan operasional warung"
+  },
+  "testimonials": {
+    "title": "Kata Mereka",
+    "subtitle": "Dipercaya ribuan pemilik warung di Indonesia",
+    "items": {
+      "one": {
+        "quote": "Akhirnya ada aplikasi yang simpel dan gratis! Dulu pakai buku tulis sering lupa, sekarang semua tercatat rapi.",
+        "name": "Bu Siti",
+        "business": "Warung Kelontong, Surabaya"
+      },
+      "two": {
+        "quote": "Fitur catat hutang sangat membantu. Tidak ada lagi yang lupa bayar karena notifikasinya.",
+        "name": "Pak Budi",
+        "business": "Toko Sembako, Bandung"
+      },
+      "three": {
+        "quote": "Laporannya lengkap dan mudah dipahami. Bisa ekspor ke Excel untuk laporan ke supplier.",
+        "name": "Bu Dewi",
+        "business": "Warung Makan, Yogyakarta"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Pilih Paket Anda",
+    "subtitle": "Gratis untuk semua fitur dasar",
+    "free": {
+      "name": "Gratis",
+      "badge": "PILIHAN UTAMA",
+      "price": "Rp 0",
+      "period": "selamanya",
+      "features": [
+        "Transaksi tanpa batas",
+        "Manajemen stok",
+        "Catat hutang",
+        "Laporan keuangan",
+        "Mode offline",
+        "Ekspor data"
+      ],
+      "cta": "Download Gratis"
+    },
+    "premium": {
+      "name": "Premium",
+      "badge": "Segera Hadir",
+      "price": "Rp 49.000",
+      "period": "/bulan",
+      "features": [
+        "Semua fitur gratis",
+        "Multi-user",
+        "Multi-cabang",
+        "Backup otomatis",
+        "Priority support",
+        "Integrasi marketplace"
+      ],
+      "cta": "Nantikan Update"
+    }
+  },
+  "faq": {
+    "title": "Pertanyaan Umum",
+    "items": {
+      "free": {
+        "q": "Apakah benar-benar gratis?",
+        "a": "Ya, 100% gratis. Tidak ada biaya tersembunyi, tidak ada iklan, dan tidak ada batasan waktu penggunaan."
+      },
+      "offline": {
+        "q": "Bagaimana cara kerja mode offline?",
+        "a": "Aplikasi menyimpan data di perangkat Anda. Saat online, data otomatis disinkronkan ke cloud untuk backup."
+      },
+      "data": {
+        "q": "Apakah data saya aman?",
+        "a": "Data dienkripsi dan disimpan di server aman. Anda bisa backup dan restore kapan saja."
+      },
+      "export": {
+        "q": "Bisa ekspor data ke Excel?",
+        "a": "Bisa. Semua laporan penjualan, stok, dan hutang bisa diekspor ke format Excel/CSV."
+      },
+      "multi": {
+        "q": "Bisa digunakan di banyak perangkat?",
+        "a": "Saat ini satu akun untuk satu perangkat. Fitur multi-device akan tersedia di versi premium."
+      },
+      "support": {
+        "q": "Bagaimana jika butuh bantuan?",
+        "a": "Hubungi kami via email atau WhatsApp. Tim support akan membantu dalam 1x24 jam."
+      },
+      "language": {
+        "q": "Apakah tersedia dalam Bahasa Indonesia?",
+        "a": "Ya, aplikasi sepenuhnya dalam Bahasa Indonesia. Juga tersedia dalam Bahasa Inggris."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Solusi digital untuk warung modern",
+    "nav": {
+      "features": "Fitur",
+      "pricing": "Harga",
+      "faq": "FAQ"
+    },
+    "copyright": "© 2024 Jaga Warung. Semua hak dilindungi."
+  }
+}
