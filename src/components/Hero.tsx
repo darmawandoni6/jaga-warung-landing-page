@@ -1,9 +1,9 @@
-import { useTranslation } from 'react-i18next'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 export function Hero() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section className="pt-24 pb-16 bg-gradient-to-br from-emerald-50 to-background">
@@ -11,15 +11,15 @@ export function Hero() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-              {t('hero.headline')}
+              {t("hero.headline")}
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              {t('hero.subhead')}
+              {t("hero.subhead")}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button size="lg">{t('hero.cta.download')}</Button>
+              <Button size="lg">{t("hero.cta.download")}</Button>
               <Button size="lg" variant="outline">
-                {t('hero.cta.demo')}
+                {t("hero.cta.demo")}
               </Button>
             </div>
           </div>
@@ -48,18 +48,24 @@ export function Hero() {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="p-6 text-center">
             <div className="text-3xl font-bold text-primary">5,000+</div>
-            <div className="text-muted-foreground">{t('hero.stats.warungs')}</div>
+            <div className="text-muted-foreground">
+              {t("hero.stats.warungs")}
+            </div>
           </Card>
           <Card className="p-6 text-center">
             <div className="text-3xl font-bold text-primary">50,000+</div>
-            <div className="text-muted-foreground">{t('hero.stats.transactions')}</div>
+            <div className="text-muted-foreground">
+              {t("hero.stats.transactions")}
+            </div>
           </Card>
           <Card className="p-6 text-center">
             <div className="text-3xl font-bold text-primary">4.8</div>
-            <div className="text-muted-foreground">{t('hero.stats.rating')}</div>
+            <div className="text-muted-foreground">
+              {t("hero.stats.rating")}
+            </div>
           </Card>
         </div>
       </div>
     </section>
-  )
+  );
 }

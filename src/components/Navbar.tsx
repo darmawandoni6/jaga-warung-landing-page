@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { ShieldCheck, Menu } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import logo from "/images/icon.png";
 
 export function Navbar() {
-  const { t, i18n } = useTranslation()
-  const [open, setOpen] = useState(false)
+  const { t, i18n } = useTranslation();
+  const [open, setOpen] = useState(false);
 
   const navItems = [
-    { href: '#fitur', label: t('nav.features') },
-    { href: '#harga', label: t('nav.pricing') },
-    { href: '#faq', label: t('nav.faq') },
-  ]
+    { href: "#fitur", label: t("nav.features") },
+    { href: "#harga", label: t("nav.pricing") },
+    { href: "#faq", label: t("nav.faq") },
+  ];
 
   const changeLang = (lang: string) => {
-    i18n.changeLanguage(lang)
-  }
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-background/90 backdrop-blur border-b border-border">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 font-bold text-xl text-primary">
-          <ShieldCheck className="size-6" />
+        <a
+          href="#"
+          className="flex items-center gap-2 font-bold text-xl text-primary"
+        >
+          <div className="bg-primary rounded-lg">
+            <img src={logo} alt="Jaga Warung" className="size-8" />
+          </div>
           Jaga Warung
         </a>
 
@@ -47,16 +53,16 @@ export function Navbar() {
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => changeLang('id')}
-            className={i18n.language === 'id' ? 'text-primary' : ''}
+            onClick={() => changeLang("id")}
+            className={i18n.language === "id" ? "text-primary" : ""}
           >
             ID
           </Button>
           <Button
             variant="ghost"
             size="sm"
-            onClick={() => changeLang('en')}
-            className={i18n.language === 'en' ? 'text-primary' : ''}
+            onClick={() => changeLang("en")}
+            className={i18n.language === "en" ? "text-primary" : ""}
           >
             EN
           </Button>
@@ -85,16 +91,16 @@ export function Navbar() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => changeLang('id')}
-                  className={i18n.language === 'id' ? 'text-primary' : ''}
+                  onClick={() => changeLang("id")}
+                  className={i18n.language === "id" ? "text-primary" : ""}
                 >
                   ID
                 </Button>
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => changeLang('en')}
-                  className={i18n.language === 'en' ? 'text-primary' : ''}
+                  onClick={() => changeLang("en")}
+                  className={i18n.language === "en" ? "text-primary" : ""}
                 >
                   EN
                 </Button>
@@ -104,5 +110,5 @@ export function Navbar() {
         </Sheet>
       </div>
     </nav>
-  )
+  );
 }
