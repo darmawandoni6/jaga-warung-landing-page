@@ -28,9 +28,9 @@ Jaga Warung is a mobile POS and inventory management app built with an **offline
 
 ## Preview
 
-<video src="https://jaga-warung.vercel.app/demo/demo.webm" controls width="100%" style="max-width: 720px; border-radius: 12px;"></video>
+[![Jaga Warung Landing Page](https://jaga-warung.vercel.app/images/Screenshot_1790493365.png)](https://jaga-warung.vercel.app)
 
-> Can't play the video? Watch it live at [jaga-warung.vercel.app](https://jaga-warung.vercel.app).
+> 🎬 Click the image to visit the live site — a demo video is available on the page.
 
 ## Tech Stack
 
