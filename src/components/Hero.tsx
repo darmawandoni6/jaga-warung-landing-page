@@ -10,6 +10,7 @@ import { PhoneMockup } from "@/components/shared/PhoneMockup";
 import { FlaskConical, Gift, LayoutGrid, Play } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { DOWNLOAD_URL } from "@/lib/constants";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -29,7 +30,7 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Button size="lg" asChild>
                 <a
-                  href="https://drive.google.com/file/d/1vu52UE5iF-GonfScht5pMF0OKyHdjhXd/view?usp=drive_link"
+                  href={DOWNLOAD_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

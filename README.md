@@ -1,15 +1,50 @@
 # Jaga Warung Landing Page
 
-Static marketing landing page for Jaga Warung POS application.
+Static marketing landing page for **Jaga Warung** — a free POS app for Indonesian small businesses (*warung kelontong*).
+
+> 🔗 **Live**: [jaga-warung.vercel.app](https://jaga-warung.vercel.app)
+
+## About the App
+
+Jaga Warung is a mobile POS and inventory management app built with an **offline-first architecture** for fast, reliable daily operations in neighborhood grocery stores.
+
+| Feature | Description |
+|---|---|
+| **POS / Kasir** | Fast product search, barcode scanner, real-time cart, checkout with change calculation |
+| **Inventory** | Product CRUD, category management, quick restock, stock adjustment, movement history |
+| **Debt Tracking** | Customer debt recording, partial/full payment, payment history |
+| **Cash Flow** | Income/expense tracking with automatic sales sync |
+| **Reports** | Weekly, monthly, yearly analytics — revenue, COGS, gross profit, margin % |
+| **Backup & Restore** | Full database export/import via JSON |
+
+> This repository is the **landing page only**. For the mobile app source code, see [Related Repositories](#related-repositories) below.
+
+## Related Repositories
+
+| Repository | Description |
+|---|---|
+| [`jaga-warung`](../jaga-warung) | 📱 Mobile app — Expo + React Native + SQLite (the actual POS application) |
+| [`jaga-warung-landing-page`](.) | 🌐 This repo — React + Vite marketing landing page |
+
+## Preview
+
+<video src="https://jaga-warung.vercel.app/demo/demo.webm" controls width="100%" style="max-width: 720px; border-radius: 12px;"></video>
+
+> Can't play the video? Watch it live at [jaga-warung.vercel.app](https://jaga-warung.vercel.app).
 
 ## Tech Stack
 
-- **Framework**: React 18 + TypeScript
+- **Framework**: React 19 + TypeScript
 - **Build Tool**: Vite
 - **Styling**: Tailwind CSS v3 + shadcn/ui
 - **Icons**: Lucide React
 - **i18n**: react-i18next (ID/EN)
 - **Video**: Demo video modal with shadcn Dialog
+
+## Prerequisites
+
+- **Node.js**: `v24` (see [`.nvmrc`](.nvmrc)) — use `nvm use` to switch automatically
+- **npm**: bundled with Node
 
 ## Getting Started
 
@@ -132,6 +167,11 @@ Build output in `dist/` folder. Deploy to Vercel, Netlify, or Cloudflare Pages.
 npm run build
 npm run preview  # Preview at localhost:4173
 ```
+
+## Contributing
+
+- **For humans**: Follow the PR conventions in [AGENTS.md](AGENTS.md#pr-instructions) — one feature or fix per PR, run `npm run lint` and `npm run build` before opening.
+- **For AI agents**: Read [AGENTS.md](AGENTS.md) fully before making any changes. It contains guardrails, code conventions, and the required validation sequence.
 
 ## Changelog
 

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { DOWNLOAD_URL } from '@/lib/constants'
 
 export function Pricing() {
   const { t } = useTranslation()
@@ -34,7 +35,15 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full">{t('pricing.free.cta')}</Button>
+              <Button className="w-full" asChild>
+                <a
+                  href={DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('pricing.free.cta')}
+                </a>
+              </Button>
             </CardContent>
           </Card>
 
